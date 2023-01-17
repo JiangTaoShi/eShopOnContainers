@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/JiangTaoShi/eShopOnContainers/ordering/configs"
-	"github.com/JiangTaoShi/eShopOnContainers/ordering/router"
+	"github.com/JiangTaoShi/eShopOnContainers/src/ordering/configs"
+	"github.com/JiangTaoShi/eShopOnContainers/src/ordering/router"
 	"github.com/gin-gonic/gin"
 )
 

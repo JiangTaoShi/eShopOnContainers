@@ -5,7 +5,6 @@ import (
 	"time"
 
 	"github.com/JiangTaoShi/eShopOnContainers/ordering/configs"
-	"github.com/JiangTaoShi/eShopOnContainers/pkg/env"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -94,11 +93,11 @@ func dbConnect(user, pass, addr, dbName string) (*gorm.DB, error) {
 		"Local")
 
 	config := &gorm.Config{}
-	if env.Active().IsDev() {
-		config = &gorm.Config{
-			Logger: logger.Default.LogMode(logger.Info),
-		}
+	//if env.Active().IsDev() {
+	config = &gorm.Config{
+		Logger: logger.Default.LogMode(logger.Info),
 	}
+	//}
 	db, err := gorm.Open(mysql.Open(dsn), config)
 	if err != nil {
 		return nil, err

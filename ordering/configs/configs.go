@@ -2,11 +2,11 @@ package configs
 
 import (
 	"fmt"
-	"github.com/JiangTaoShi/eShopOnDapr/pkg/env"
-	"github.com/fsnotify/fsnotify"
 	"time"
+
+	"github.com/fsnotify/fsnotify"
+	"github.com/spf13/viper"
 )
-import "github.com/spf13/viper"
 
 var config = new(Config)
 
@@ -46,7 +46,7 @@ type Config struct {
 }
 
 func init() {
-	viper.SetConfigName(env.Active().Value() + "-configs")
+	viper.SetConfigName("dev-configs")
 	viper.SetConfigType("toml")
 	viper.AddConfigPath("./configs")
 

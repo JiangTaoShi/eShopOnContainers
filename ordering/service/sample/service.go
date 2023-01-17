@@ -1,7 +1,7 @@
 package sample
 
 import (
-	"github.com/JiangTaoShi/eShopOnDapr/ordering/infrastructure/repositories/sample"
+	"github.com/JiangTaoShi/eShopOnContainers/ordering/infrastructure/repositories/sample"
 )
 
 type SampleService struct {
