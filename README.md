@@ -4,8 +4,8 @@
 > 作者在dotNet领域已经深耕多年，这个开源项目给作者带来的提升和收获很大[eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)，尤其对DDD的理解，故希望能换一种语言方式实现,加深自己的理解及进步，同样也希望大家能有所收获。
 
 ## 项目介绍
-- [x] [Gin Web框架](https://github.com/gin-gonic/gin)  
-- [x] [Gorm Orm框架](https://github.com/go-gorm/gorm)  
+- [x] [Gin](https://github.com/gin-gonic/gin)  
+- [x] [Gorm](https://github.com/go-gorm/gorm)  
 
 ## Give a Star! ⭐️
 
